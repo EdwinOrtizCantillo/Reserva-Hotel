@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Equipo7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <link rel="icon" href="img/iconhotel.png">
+
+</head>
+
+<body>
+    <div class="bg-login-image"></div>
+
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="card">
+            <div>
+                <h1 class="h4 text-gray-900 my-3 text-center">Bienvenido Hotel Equipo7</h1>
+            </div>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item text-center">
+                    <a class="nav-link active btl" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Iniciar sesión</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link btr" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Registrar</a>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form id="form-login">
+                        <div class="form px-4 pt-5">
+                            <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña"
+                                required>
+                            <button type="submit" class="btn btn-primary btn-block" id="BTNENTRAR">Entrar</button>
+                            <hr>
+                        </div> 
+                    </form>
+                    <div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o contraseña
+                        incorrectos <br><a> si aún no
+                            tienes cuenta Registrate</a></div>
+                   
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <form id="form-register">
+                        <div class="form px-4">
+                            <input type="text" name="" class="form-control" id="input-username"
+                                placeholder="nombre de usuario" required>
+                            <input type="text" name="" class="form-control" id="input-contrasena"
+                                placeholder="contraseña" required>
+                            <input type="text" name="" class="form-control" id="input-contrasena-repeat"
+                                placeholder="repetir contraseña" required>
+                            <input type="text" name="" class="form-control" id="input-nombre" placeholder="nombre"
+                                required>
+                            <input type="text" name="" class="form-control" id="input-apellidos" placeholder="apellidos"
+                                required>
+                            <input type="text" name="" class="form-control" id="input-ciudad_origen"
+                                placeholder="Ciudad de Origen" required>
+                            <input type="text" name="" class="form-control" id="input-email" placeholder="e-mail"
+                                required>
+                            <input type="text" name="" class="form-control" id="input-celular" placeholder="Celular"
+                                required>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="input-premium">
+                                <label class="form-check-label" for="input-premium">Premium</label>
+                            </div>
+                            <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
+                        </div>
+                    </form>
+                    <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+                    <a href="index.html">¿Ya tienes cuenta? Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

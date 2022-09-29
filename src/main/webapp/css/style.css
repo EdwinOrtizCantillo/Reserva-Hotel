@@ -1,0 +1,125 @@
+:root {
+    --primary: #6209db;
+    --dark: #000000;
+    --light: #ffffff;
+    --grey: #f5f5f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark)
+}
+
+.navbar {
+    min-height: 90;
+}
+
+.navbar .container-fluid{
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;    
+    width: 100%;
+}
+
+.navbar .btn {
+    padding: .625rem 1.25rem !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-light {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-light {
+    background-color: var(--grey) !important;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.section {
+    height: 900px;
+}
+
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.step::after {
+    content: "";
+    border-right: 1px solid var(--dark);
+    opacity: .2;
+    height: 60px;
+    position: absolute;
+    top: 34px;
+}
+
+.call-to-action {
+    border-radius: 50px;
+}
+
+.call-to-action img {
+    max-width: 280px;
+}
+
+.cta-form {
+    max-width: 480px;
+}
+
+.cta-form .btn-control {
+    min-height: 82px;
+}
+
+.cta-form .btn {
+    top: 12;
+    right: 12px;
+}
+
+@media (max-width: 480px){
+    .navbar {
+        position: relative !important;
+    }
+    section {
+        height: unset;
+    }
+    .call-to-action {
+        max-width: 100%;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+ }
+ 
+
+@media (max-width: 992px) {
+  .specials .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+}
