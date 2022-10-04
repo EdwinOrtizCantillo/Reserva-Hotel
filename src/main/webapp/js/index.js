@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     $("#form-login").submit(function (event) {
@@ -13,8 +11,7 @@ $(document).ready(function () {
         event.preventDefault();
         registrarUsuario();
     });
-
-
+    
 });
 
 function autenticarUsuario() {
@@ -32,7 +29,7 @@ function autenticarUsuario() {
         }),
         success: function (result) {
             let parsedResult = JSON.parse(result);
-            if (parsedResult != false) {
+            if (parsedResult !== false) {
                 $("#login-error").addClass("d-none");
                 let username = parsedResult['username'];
                 document.location.href = "home.html?username=" + username;
@@ -76,7 +73,7 @@ function registrarUsuario() {
                 if (parsedResult != false) {
                     $("#register-error").addClass("d-none");
                     let username = parsedResult['username'];
-                    document.location.href = "home.html?username=" + username;
+                    document.location.href = "index.html?username=" + username;
                 } else {
                     $("#register-error").removeClass("d-none");
                     $("#register-error").html("Error en el registro del usuario");

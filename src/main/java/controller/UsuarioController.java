@@ -1,10 +1,11 @@
 package controller;
 
-import beans.Usuario;
-import com.google.gson.Gson;
-import connection.DBConnection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import com.google.gson.Gson;
+
+import beans.Usuario;
+import connection.DBConnection;
 
 public class UsuarioController implements IUsuarioController {
 
@@ -15,7 +16,6 @@ public class UsuarioController implements IUsuarioController {
 
         DBConnection con = new DBConnection();
 
-        
         String sql = "Select * from usuario where username = '" + username
                 + "' and contrasena = '" + contrasena + "'";
         try {
@@ -71,4 +71,80 @@ public class UsuarioController implements IUsuarioController {
 
     }
 
+   
+    public String pedir(String username) {
+
+        Gson gson = new Gson();
+
+        DBConnection con = new DBConnection();
+        String sql = "Select * from usuario where username = '" + username + "'";
+
+        try {
+
+            Statement st = con.getConnection().createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {
+                String contrasena = rs.getString("contrasena");
+                
+                String nombre = rs.getString("nombre");
+                String apellidos = rs.getString("apellidos");
+                String ciudad_origen = rs.getString("ciudad_origen");
+                String email = rs.getString("email");
+                String celular = rs.getString("celular");
+                Boolean premium = rs.getBoolean("premium");
+                
+
+                Usuario usuario = new Usuario(username, contrasena,
+                        nombre, apellidos, ciudad_origen, email, celular, premium);
+
+                return gson.toJson(usuario);
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            con.desconectar();
+        }
+
+        return "false";
+    }
+
+ 
+       
+    public String modificar(String username, String nuevaContrasena,
+            String nuevoNombre, String nuevosApellidos, String nuevaCiudad_Origen,
+            String nuevoEmail, String nuevoCelular, boolean nuevoPremium) {
+
+        DBConnection con = new DBConnection();
+
+        String sql = "Update usuario set contrasena = '" + nuevaContrasena
+                + "', nombre = '" + nuevoNombre + "', "
+                + "apellidos = '" + nuevosApellidos + "', ciudad_origen = '"
+                + nuevaCiudad_Origen + "', email = '" + nuevoEmail + "', celular = " + nuevoCelular + ", premium = ";
+
+        if (nuevoPremium == true) {
+            sql += " 1 ";
+        } else {
+            sql += " 0 ";
+        }
+
+        sql += " where username = '" + username + "'";
+
+        try {
+
+            Statement st = con.getConnection().createStatement();
+            st.executeUpdate(sql);
+
+            return "true";
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            con.desconectar();
+        }
+
+        return "false";
+
+    }
+
+    
 }

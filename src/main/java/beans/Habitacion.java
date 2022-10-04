@@ -1,27 +1,27 @@
 
 package beans;
 
-import java.sql.Date;
-
 public class Habitacion {
+
+    public static void add(String toJson) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    
     private int id_habitacion;
     private String piso;
     private String tipo;
-    private String descripcion;
     private String ciudad;
     private int precio_dia;
     private boolean novedad;
-    private Date fecha_ingreso;
 
-    public Habitacion(int id_habitacion, String piso, String tipo, String descripcion, String ciudad, int precio_dia, boolean novedad, Date fecha_ingreso) {
+    public Habitacion(int id_habitacion, String piso, String tipo, String ciudad, int precio_dia, boolean novedad) {
         this.id_habitacion = id_habitacion;
         this.piso = piso;
         this.tipo = tipo;
-        this.descripcion = descripcion;
         this.ciudad = ciudad;
         this.precio_dia = precio_dia;
         this.novedad = novedad;
-        this.fecha_ingreso = fecha_ingreso;
     }
 
     public int getId_habitacion() {
@@ -48,14 +48,6 @@ public class Habitacion {
         this.tipo = tipo;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public String getCiudad() {
         return ciudad;
     }
@@ -80,17 +72,4 @@ public class Habitacion {
         this.novedad = novedad;
     }
 
-    public Date getFecha_ingreso() {
-        return fecha_ingreso;
-    }
-
-    public void setFecha_ingreso(Date fecha_ingreso) {
-        this.fecha_ingreso = fecha_ingreso;
-    }
-    
-    
-    @Override
-    public String toString() {
-        return "Habitacion{" + "id_habitacion= " + id_habitacion + ", piso= " + piso + ", tipo= " + tipo +", descripcion= " + descripcion + ", ciudad= " + ciudad + ", precio_dia= " + precio_dia + ", novedad= " + novedad + ", fecha_ingreso= " + fecha_ingreso + '}';
-    }
 }

@@ -38,13 +38,11 @@ public class OperacionesBD {
                 int id_habitacion = rs.getInt("id_habitacion");
                 String piso = rs.getString("piso");
                 String tipo = rs.getString("tipo");
-                String descripcion = rs.getString("descripcion");
                 String ciudad = rs.getString("ciudad");
                 int precio_dia = rs.getInt("precio_dia");
                 boolean novedad = rs.getBoolean("novedad");
-                Date fecha_ingreso = rs.getDate("fecha_ingreso");
 
-                Habitacion habitacion = new Habitacion(id_habitacion, piso, tipo, descripcion, ciudad, precio_dia, novedad, fecha_ingreso);
+                Habitacion habitacion = new Habitacion(id_habitacion, piso, tipo, ciudad, precio_dia, novedad);
                 System.out.println(habitacion.toString());
             }
             st.executeQuery(sql);

@@ -22,10 +22,7 @@ private boolean premium;
         this.premium = premium;
     }
 
-    public Usuario(String username, String contrasena, String nombre, String apellidos, String email, String celular, Boolean premium) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+    
     public String getUsername() {
         return username;
     }
@@ -90,9 +87,5 @@ private boolean premium;
         this.premium = premium;
     }
 
-@Override
-    public String toString() {
-        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellidos=" + apellidos + ", ciudad_origen=" + ciudad_origen +  ", email=" + email + ", celular=" + celular + ", premium=" + premium + '}';
-    }
     
 }

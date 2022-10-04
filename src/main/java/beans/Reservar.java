@@ -1,25 +1,26 @@
 package beans;
 
+import java.sql.Date;
+
 public class Reservar {
 
     private int id_habitacion;
     private String username;
-    private String tipo;
-    private String piso;
-    private String descripcion;
-    private String ciudad;
-    private boolean novedad;
+    private String pago;
+    private Date fecha_ingreso;
+    private Date fecha_salida;
 
-    public Reservar(int id_habitacion, String username, String tipo, String piso, String descripcion, String ciudad, boolean novedad){
-        this.id_habitacion= id_habitacion;
+    public Reservar(int id_habitacion, String username, String pago, Date fecha_ingreso, Date fecha_salida) {
+        this.id_habitacion = id_habitacion;
         this.username = username;
-        this.tipo = tipo;     
-        this.piso = piso;
-        this.descripcion = descripcion;
-        this.ciudad = ciudad;
-        this.novedad = novedad;
+        this.pago = pago;
+        this.fecha_ingreso = fecha_ingreso;
+        this.fecha_salida = fecha_salida;
+        
     }
 
+    
+    
     public int getId_habitacion() {
         return id_habitacion;
     }
@@ -36,48 +37,28 @@ public class Reservar {
         this.username = username;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getPago() {
+        return pago;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setPago(String pago) {
+        this.pago = pago;
     }
 
-    public String getPiso() {
-        return piso;
+    public Date getFecha_ingreso() {
+        return fecha_ingreso;
     }
 
-    public void setPiso(String piso) {
-        this.piso = piso;
+    public void setFecha_ingreso(Date fecha_ingreso) {
+        this.fecha_ingreso = fecha_ingreso;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public Date getFecha_salida() {
+        return fecha_salida;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setFecha_salida(Date fecha_salida) {
+        this.fecha_salida = fecha_salida;
     }
 
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
-
-    public boolean isNovedad() {
-        return novedad;
-    }
-
-    public void setNovedad(boolean novedad) {
-        this.novedad = novedad;
-    }
-
-    @Override
-    public String toString() {
-        return "Reservar{" + "id_habitacion= " + id_habitacion + ", username= " + username + ", tipo= " + tipo +", piso= " + piso +", descripcion= " + descripcion + ", novedad= " + novedad + '}';
-    }
-}
+ }

@@ -9,10 +9,32 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/home.js"></script>
     <link rel="icon" href="img/iconhotel.png" />
 
     <title>Hote Equipo 7</title>
@@ -49,7 +71,23 @@
                         <a class="nav-link align-self-center text-light" href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="index.html">Cerrar Sesion</a>
+                        <nav class="navbar navbar-dark bg-primary">
+                            <div id="user-data-profile">
+                                <span id="username"></span>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span id="ajustes text-light">Ajustes </span>
+                                    </button>
+                                    <div class="dropdown-menu bg-primary" id="main-menu">
+                                        <br>
+                                        <a id="perfil-btn" class="dropdown-item text-light" href="#profile">perfil</a>
+                                        <a id="admin-btn" class="dropdown-item text-light" href="#admin">Administrador</a>
+                                        <a id="salir-btn" class="dropdown-item text-light" href="index.html">Salir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </li>
                 </ul>
             </div>
@@ -244,31 +282,32 @@
                 <div class="col-lg-3 py-5">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Habitacion 1</a>
+                            <a class="nav-link text-primary fw-bold mb-4" data-bs-toggle="tab" href="#tab-1">Elige tu Habitacion</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-1">Habitacion 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Habitacion 2</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-2">Habitacion 2</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Habitacion 3</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-3">Habitacion 3</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Habitacion 4</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-4">Habitacion 4</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Habitacion 5</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-5">Habitacion 5</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Habitacion 6</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-6">Habitacion 6</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Habitacion 7</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-7">Habitacion 7</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Habitacion 8</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-8">Habitacion 8</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Habitacion 9</a>
+                            <a class="nav-link bg-primary text-light border-5" data-bs-toggle="tab" href="#tab-9">Habitacion 9</a>
                         </li>
                     </ul>
                 </div>
@@ -276,39 +315,50 @@
                     <div class="tab-content">
                         <div class="tab-pane active show" id="tab-1">
                             <div class="row">
-                                <h5>Description</h5>
-                                <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble Estándar, Cama grande de matrimonio (para un máximo de dos personas) Aire acondicionado Conexión Wi-Fi gratuita Televisor con pantalla plana, radio, vídeos a demanda</p>
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble
+                                        Estándar,
+                                        Cama grande de matrimonio (para un máximo de dos personas) Aire acondicionado
+                                        Conexión
+                                        Wi-Fi gratuita Televisor con pantalla plana, radio, vídeos a demanda.
+                                    <p>
+                                    <p>Ciudad Santa Ana Habitación doble Estándar Piso 1 Vista a la calle o al patio
+                                        Costo diario 35.000</p>
+                                    <img src="img/habitacion_1.webp" alt="" class="img-fluid">
                                 </div>
                                 <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
-                                    <img src="img/habitacion_1.webp" alt="" class="img-fluid">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -316,288 +366,401 @@
                         <div class="tab-pane" id="tab-2">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble
+                                        Estándar,
+                                        Cama grande de matrimonio (para un máximo de dos personas) Aire acondicionado
+                                        Conexión
+                                        Wi-Fi gratuita Televisor con pantalla plana, radio, vídeos a demanda.
+                                    <p>
+                                    <p>Ciudad Santa Ana Habitación doble Estándar Piso 1 Vista a la calle o al patio
+                                        Costo diario 35.000</p>
                                     <img src="img/habitacion_2.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-3">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble
+                                        Estándar,
+                                        Cama grande de matrimonio (para un máximo de dos personas) Aire acondicionado
+                                        Conexión
+                                        Wi-Fi gratuita Televisor con pantalla plana, radio, vídeos a demanda.
+                                    <p>
+                                    <p>Ciudad Santa Ana Habitación doble Estándar Piso 1 Vista a la calle o al patio
+                                        Costo diario 35.000</p>
                                     <img src="img/habitacion_3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-4">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble De
+                                        lujo, Cama grande de matrimonio o dos camas individuales,
+                                        posibilidad de alojar a tres personas con una cama supletoria (gratis para niños
+                                        menores de 12 años) Vista de la calle con posibilidad de un balcón,
+                                        Aire acondicionado e insonorización, Baño con una ducha, independiente, Conexión
+                                        Wi-Fi gratuita,Teléfono con líneas directas al exterior
+                                        y servicio de contestador, Televisor con pantalla plana, radio, vídeos a
+                                        demanda, Caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Habitación doble de lujo Piso 2 con vista a la calle con
+                                        posibilidad de un balcón Costo diario 45000</p>
                                     <img src="img/habitacion_4.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-5">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble De
+                                        lujo, Cama grande de matrimonio o dos camas individuales,
+                                        posibilidad de alojar a tres personas con una cama supletoria (gratis para niños
+                                        menores de 12 años) Vista de la calle con posibilidad de un balcón,
+                                        Aire acondicionado e insonorización, Baño con una ducha, independiente, Conexión
+                                        Wi-Fi gratuita,Teléfono con líneas directas al exterior
+                                        y servicio de contestador, Televisor con pantalla plana, radio, vídeos a
+                                        demanda, Caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Habitación doble de lujo Piso 2 con vista a la calle con
+                                        posibilidad de un balcón Costo diario 45000</p>
                                     <img src="img/habitacion_5.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-6">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>Lista completa de comodidades y servicios que incluye nuestra habitación doble De
+                                        lujo, Cama grande de matrimonio o dos camas individuales,
+                                        posibilidad de alojar a tres personas con una cama supletoria (gratis para niños
+                                        menores de 12 años) Vista de la calle con posibilidad de un balcón,
+                                        Aire acondicionado e insonorización, Baño con una ducha, independiente, Conexión
+                                        Wi-Fi gratuita,Teléfono con líneas directas al exterior
+                                        y servicio de contestador, Televisor con pantalla plana, radio, vídeos a
+                                        demanda, Caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Habitación doble de lujo Piso 2 con vista a la calle con
+                                        posibilidad de un balcón Costo diario 45000</p>
                                     <img src="img/habitacion_6.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-7">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>la Suite de dos dormitorios grandes con baño (y ducha independiente), Amplia sala
+                                        de estar independiente entre los dos dormitorios con sillones y sofá cama,
+                                        solo en pisos superiores y vista solo a la calle balcón, Aire acondicionado e
+                                        insonorización, conexión Wi-Fi gratuita, teléfono con líneas directas al
+                                        exterior
+                                        y servicio de contestador, televisor de pantalla plana, radio, vídeos a demanda,
+                                        caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Habitación doble de lujo Piso 3 Vista solo a la calle balcón
+                                        Costo diario 60000</p>
                                     <img src="img/habitacion_7.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-8">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>la Suite de dos dormitorios grandes con baño (y ducha independiente), Amplia sala
+                                        de estar independiente entre los dos dormitorios con sillones y sofá cama,
+                                        solo en pisos superiores y vista solo a la calle balcón, Aire acondicionado e
+                                        insonorización, conexión Wi-Fi gratuita, teléfono con líneas directas al
+                                        exterior
+                                        y servicio de contestador, televisor de pantalla plana, radio, vídeos a demanda,
+                                        caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Habitación doble de lujo Piso 3 Vista solo a la calle balcón
+                                        Costo diario 60000</p>
                                     <img src="img/habitacion_8.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab-9">
                             <div class="row">
                                 <div class="col-lg-6 details order-2 order-lg-1">
-                                    <form class="row g-3 needs-validation align-self-center" novalidate>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Ciudad</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Santa Marta" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Tipo de habitación</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Habitación doble Estándar" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Piso</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="piso 2 Vista a la calle o al patio" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Estado</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="Disponible" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="input-nombre">Costo Diario</label>
-                                            <input type="text" class="form-control border-0" id="validationCustom05"value="35.000" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="validationCustom6" class="form-label fw-bold" >Fecha</label>
-                                            <input type="date" type="text" class="form-control" id="validationCustom05" required />
-                                        </div>
-                                        <input type="submit" class="btn btn-primary" id="register-btn" value="Reservar" />                                        
-                                    </form>
-                                </div>
-                                <div class="col-lg-6 text-center order-1 order-lg-2">
+                                    <h5>Description</h5>
+                                    <p>la Suite Presidencial grandes con baño (y ducha independiente), Amplia sala de
+                                        estar independiente entre los dos dormitorios con sillones y sofá cama,
+                                        solo en pisos superiores y amplia vista de balcón, Aire acondicionado e
+                                        insonorización, conexión Wi-Fi gratuita, teléfono con líneas directas al
+                                        exterior
+                                        y servicio de contestador, televisor de pantalla plana, radio, vídeos a demanda,
+                                        caja fuerte.</p>
+                                    <p>Ciudad Santa Ana Suite Presidencial Piso 3 Vista vista panoramica desde el balcón
+                                        Costo diario 70000</p>
                                     <img src="img/habitacion_9.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 text-center order-1 order-lg-2 p-5">
+                                    <div class="card">
+                                        <form id="form-register">
+                                            <div class="form px-4">
+                                                <label for="input-nombre">Numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion"
+                                                    placeholder="Numero de Habitacion" required>
+                                                <label for="input-nombre">confirma el numero de Habitacion</label>
+                                                <input type="number" class="form-control" id="input-habitacion-repeat"
+                                                    placeholder="Repetir Numero de Habitacion" required>
+                                                <label for="input-nombre">Piso</label>
+                                                <input type="text" name="" class="form-control" id="input-piso"
+                                                    placeholder="Piso" required>
+                                                <label for="input-nombre">Tipo</label>
+                                                <input type="text" name="" class="form-control" id="input-tipo"
+                                                    placeholder="tipo" required>
+                                                <label for="input-nombre">Ciudad</label>
+                                                <input type="text" name="" class="form-control" id="input-ciudad"
+                                                    placeholder="ciudad" required>
+                                                <label for="input-nombre">Costo Diario </label>
+                                                <input type="text" name="" class="form-control" id="input-precio_dia"
+                                                    value="35000" required>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="input-novedad">
+                                                    <label class="form-check-label"
+                                                        for="input-novedad">Disponible</label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary" id="register-btn"
+                                                    value="Registrar Habitación" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -650,7 +813,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <form>
+                            <form action="https://formsubmit.co/edwin.ortiz805@gmail.com" method="POST">
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <input type="text" name="name" class="form-control" id="name"
@@ -669,16 +832,13 @@
                                     <textarea class="form-control" name="message" rows="8" placeholder="Mensaje"
                                         required></textarea>
                                 </div>
-                                <div class="my-3">
-                                    <div class="loading">Cargando</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Tu mensaje ha sido enviado. ¡Gracias!
-                                    </div>
-                                </div>
                                 <div class="text-center">
                                     <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+                                    <input type="hidden" name="_next" value="http://localhost:8084/ReservaHotel/home.html?#contacto">
+                                    <input type="hidden" name="_captcha" value="false">                                    
+                                    <input type="hidden" name="_autoresponse" value="Tu mensaje ha sido enviado. ¡Gracias!">
                                 </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -686,6 +846,136 @@
             </div>
         </div>
     </section>
+
+   <section class="d-flex py-6 align-self-center" id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>  
+                    <h1>Historial de reservas</h1>
+                    </div> 
+                    <div> 
+                    <table class="table d-none" id="historial-table">
+                        <thead class="thead-primary">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Título</th>
+                                <th scope="col">Género</th>
+                                <th scope="col">Estreno</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Devolver</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historial-tbody">
+                        </tbody>
+                    </table>
+                </div> 
+                    <div id="historial-vacio" class="alert alert-info" role="alert">No hay elementos en el historial</div>
+                </div>
+                <div class="col-lg-6 bg-light p-5">
+                    
+                    <h1 class="mt-3">Editar perfil</h1>
+        
+                    <div class="card" id="form-container">
+                        <div class="card-body">
+                            <form id="form-register">
+                                <div class="form px-4">
+                                    <input type="text" class="form-control disabled" id="input-username" placeholder="nombre de usuario" readonly>
+                                    <input type="password" name="" class="form-control" id="input-contrasena"placeholder="contraseña" required>
+                                    <input type="password" name="" class="form-control" id="input-contrasena-repeat"placeholder="repetir contraseña" required>
+                                    <input type="text" name="" class="form-control" id="input-nombre" placeholder="nombre"required>
+                                    <input type="text" name="" class="form-control" id="input-apellidos" placeholder="apellidos"required>
+                                    <input type="text" name="" class="form-control" id="input-ciudad_origen"placeholder="Ciudad de Origen" required>
+                                    <input type="text" name="" class="form-control" id="input-email" placeholder="e-mail"required>
+                                    <input type="number" step="any" name="" class="form-control" id="input-celular" placeholder="Celular"required>
+                                    
+                                    <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="input-premium">
+                                    <label class="form-check-label" for="input-premium">Premium</label>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary" id="modificar-btn" value="Guardar datos" />
+                                </div>
+                            </form>
+                            <div class="alert alert-danger d-none" id="modificar-error" role="alert">
+                                Error en la modificacación de los datos del usuario
+                            </div>
+                            <div id="modificar-exito" class="alert alert-success d-none" role="alert">
+                                Modificación de los datos del usuario realizada correctamente
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="mt-4">
+                        <button class="btn btn-danger" id="eliminar-cuenta-btn" data-toggle="modal" 
+                                data-target="#eliminar-cuenta-modal">Eliminar cuenta</button>
+                    </div>
+                    <div class="modal fade" id="eliminar-cuenta-modal" tabindex="-1" role="dialog" 
+                         aria-labelledby="eliminar-cuenta-modal-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-tittle" id="eliminar-cuenta-modal-header">¿Eliminar cuenta?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Eliminar una cuenta es una acción que no se puede restaurar. ¿Está seguro?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" 
+                                            data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-danger" 
+                                            id="aceptar-eliminar-cuenta-btn">Eliminar cuenta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="col-lg-12 d-flex py-5">
+            <div class="col-lg-3">
+                <div class="partFooter">
+                    <img src="img/iconhotel.png" alt="">
+                    <p>hotelequipo7</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="partFooter">
+                    <h4>Servicios</h4>
+                    <a href="#">Services 1</a>
+                    <a href="#">Services 2</a>
+                    <a href="#">Services 3</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="partFooter">
+                    <h4>Acerca de</h4>
+                    <a href="#">About 1</a>
+                    <a href="#">About 2</a>
+                    <a href="#">About 3</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="partFooter">
+                    <h4>Redes sociales</h4>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
